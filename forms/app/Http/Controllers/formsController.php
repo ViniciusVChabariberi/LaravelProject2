@@ -20,7 +20,7 @@ class formsController extends Controller
         $endereco = $req->input('endereco');
         $genero = $req->input('genero');
         var_dump($nome, $telefone, $endereco, $genero);
+        return view('contato', compact('nome', 'telefone', 'endereco', 'genero'));
         die();
-        #return view('cadastro', compact('nome', 'telefone', 'endereco', 'genero'));
     }
 }
